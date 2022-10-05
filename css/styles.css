@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+/* ---------------------------variables--------------------------- */
+:root {
+  --color-main: #212121;
+  --color-alt: #757575;
+  --color-accent: #2196f3;
+  --color-bg-alt: #2f303a;
+  --color-bg-sect: #f5f4fa;
+}
+
+/* ---------------------------global---------------------------- */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-alt);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  background-color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  outline: tomato solid 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ---------------------------header--------------------------- */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: #000000;
+}
+.logo span {
+  color: var(--color-accent);
+}
+
+.nav-link {
+  color: var(--color-main);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-accent);
+}
+
+.cont-link {
+  color: var(--color-alt);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.cont-link:hover,
+.cont-link:focus {
+  color: var(--color-accent);
+}
+
+/* ---------------------------main--------------------------- */
+.hero {
+  background-color: var(--color-bg-alt);
+  margin-bottom: 94px;
+}
+.hero-text {
+  color: #ffffff;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.hero .button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--color-accent);
+  cursor: pointer;
+  font-weight: 700;
+}
+.hero .button:hover,
+.hero .button:focus,
+.hero .button:active {
+  background-color: #188ce8;
+}
+
+.features {
+  margin-bottom: 94px;
+}
+
+.features-title {
+  color: var(--color-main);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* .features-text {} */
+
+.about {
+  margin-bottom: 94px;
+}
+.about-title {
+  color: var(--color-main);
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team {
+  background-color: var(--color-bg-sect);
+}
+
+.title {
+  color: var(--color-main);
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team ul {
+  display: flex;
+  justify-content: space-between;
+}
+.team-card {
+  background-color: #ffffff;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 94px;
+}
+.card-text {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+.team .member-name {
+  color: var(--color-main);
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.team .member-role {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* ---------------------------main portfolio--------------------------- */
+
+.port-menu .button {
+  font-family: inherit;
+  color: var(--color-main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.port-menu .button:hover,
+.port-menu .button:focus {
+  color: #ffffff;
+  background-color: var(--color-accent);
+}
+
+.card-title {
+  color: var(--color-main);
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+.card-text {
+  color: var(--color-alt);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+/* ---------------------------footer--------------------------- */
+
+footer {
+  background-color: var(--color-bg-alt);
+}
+footer .logo {
+  color: white;
+}
+.map-link {
+  color: #ffffff;
+}
+.map-link:hover,
+.map-link:focus {
+  color: var(--color-accent);
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-accent);
+}
