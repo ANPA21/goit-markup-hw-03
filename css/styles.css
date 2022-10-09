@@ -27,6 +27,7 @@ a {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 h1,
 h2,
@@ -41,6 +42,9 @@ p {
 
 address {
   font-style: normal;
+}
+img {
+  display: block;
 }
 
 .container {
@@ -115,18 +119,23 @@ nav {
 /* ---------------------------main--------------------------- */
 .hero {
   background-color: var(--color-bg-alt);
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .hero-text {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
   color: #ffffff;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   font-weight: 900;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 20px;
 }
 .hero .button {
   font-family: inherit;
@@ -145,7 +154,7 @@ nav {
 }
 
 .features {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .features .list {
   display: flex;
@@ -157,65 +166,88 @@ nav {
   margin-right: 30px;
 }
 .features-title {
+  margin-bottom: 10px;
+
   color: var(--color-main);
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
-/* .features-text {
-  
-} */
+/* .features-text {} */
+
+/* ----------------------about us gallery---------------------- */
 
 .about {
-  margin-bottom: 94px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 94px;
+  align-items: center;
+}
+.about .list {
+  display: flex;
+}
+
+.about .banner:not(:last-child) {
+  margin-right: 30px;
 }
 .about-title {
+  margin-bottom: 50px;
+
   color: var(--color-main);
   font-size: 36px;
   line-height: 42px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
 }
+/* ----------------------team section----------------------*/
 
 .team {
   background-color: var(--color-bg-sect);
-  padding: 94px 0 94px 0;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
-
+.team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .title {
+  margin-bottom: 50px;
+
   color: var(--color-main);
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .team ul {
   display: flex;
-  justify-content: space-between;
 }
 .team-card {
-  background-color: #ffffff;
-  width: 270px;
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  background-color: #ffffff;
+  width: 270px;
 }
-/* .team-media {
-} */
+
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+
 .card-text {
   text-align: center;
   margin: 30px 0 30px 0;
 }
 .team .member-name {
+  margin-bottom: 10px;
+
   color: var(--color-main);
   font-size: 16px;
   line-height: 19px;
   font-weight: 500;
-  margin-bottom: 10px;
 }
 .team .member-role {
   font-size: 16px;
@@ -259,6 +291,9 @@ nav {
 /* ---------------------------footer--------------------------- */
 
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--color-bg-alt);
 }
 footer .logo {
